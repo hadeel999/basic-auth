@@ -3,7 +3,7 @@ const express = require('express');
 const signupRouters=express.Router();
 const {users}=require('../models/index');
 const bcrypt = require('bcrypt');
-
+const logger=require("../middleware/logger");
 signupRouters.get('/',(req,res)=>{
     res.send("Welcome to my basic-auth server!");
 })

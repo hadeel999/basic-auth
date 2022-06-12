@@ -1,7 +1,8 @@
 'use strict';
 const express = require('express');
 const signinRouters=express.Router();
-const basicAuth=require('../middleware/sigininmiddleware');
+const basicAuth=require('../middleware/basicAuth');
+const logger=require("../middleware/logger");
 
 signinRouters.post('/signin',basicAuth,(req,res)=>{
 res.status(200).json(req.user);

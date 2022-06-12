@@ -6,3 +6,4 @@
 ### [Pull Request](https://github.com/hadeel999/basic-auth/pull/1)
 
 ## UML Diagram
+![](./basic-auth%20uml.PNG)
