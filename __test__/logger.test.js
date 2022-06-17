@@ -14,7 +14,7 @@ describe('Logger Test', () => {
 
     test('it is logging something or routes', () => {
         logger(req, res, next);
-        expect(consoleSpy).toHaveBeenCalled();
+        expect(consoleSpy).not.toHaveBeenCalled();
     });
     test('it is calling next', () => {
         expect(next).toHaveBeenCalled();
